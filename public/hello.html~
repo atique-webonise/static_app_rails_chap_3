@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Greeting</title>
-</head>
-<body>
-<p>Hello, world!</p>
-</body>
-</html
+def string_shuffle(s)
+   if s.split?
+     s.shuffle
+     s.join(' ')
+     else
+            s.shuffle
+     end
+   end
