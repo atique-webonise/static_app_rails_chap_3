@@ -37,7 +37,7 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 gem 'bootstrap-sass', '2.0.4'
-gem 'annotate', '2.5.0', group: :development
+gem 'annotate', '2.5.0'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'

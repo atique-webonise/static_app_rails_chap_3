@@ -2,6 +2,7 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 require 'will_paginate/array'
+require 'faker'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
@@ -39,7 +40,7 @@ module StaticApp
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
-
+    config.active_record.whitelist_attributes = true
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
 
