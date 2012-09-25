@@ -1,0 +1,1 @@
+$('#comments_<%=@micropost.id%>:last').append("<div><span style='width: 100%; background:#dff0d8; font-size: 12pt' ><%= wrap(@comment.comment_content) %></span><br> <span class='timestamp' style='width: 100%; background:#dff0d8; font-size: 10pt'> Posted by<%= @comment.user.name %> <%= time_ago_in_words(@comment.created_at) %> ago.</span> </div>")
