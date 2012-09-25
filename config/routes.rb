@@ -14,10 +14,7 @@ StaticApp::Application.routes.draw do
 
   match 'signup',  to: 'users#new'
   match '/', to: 'pages#home'
-  #match '/help',    to: 'pages#help'
-  #match '/about',   to: 'pages#about'
-  #match '/contact', to: 'pages#contact'
-  #root to: 'pages#home'
+
   match 'help',    to: 'pages#help'
   match '/about',   to: 'pages#about'
   match 'contact', to: 'pages#contact'
@@ -26,6 +23,10 @@ StaticApp::Application.routes.draw do
   match '/signout', to: 'sessions#destroy', via: :delete
 
 
+  #match '/help',    to: 'pages#help'
+  #match '/about',   to: 'pages#about'
+  #match '/contact', to: 'pages#contact'
+  #root to: 'pages#home'
  #get 'pages/help'
   #get 'pages/home'
  #get 'pages/about'
